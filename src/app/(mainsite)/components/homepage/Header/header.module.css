@@ -1,6 +1,41 @@
 .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: relative;
-    padding: var(--section-padding-top) 0;
+    padding: var(--section-padding-top) 10% calc(var(--section-padding-top) * 3) 10%;
+}
+
+.textWrapper{
+    width: 50%;
+}
+
+.textWrapper h1{
+    font-size: 5.5rem;
+}
+
+.serving{
+    margin: 3vw 0 2vw 0;
+    padding: 0.5vw 2vw;
+    background-color: #bb3530cc;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.serving svg{
+    width: 2vw;
+    height: 2vw;
+}
+.serving span{
+    font-size: 1.2rem;
+    margin-left: 1vw;
+}
+
+.textWrapper h3{
+    font-weight: 400;
+    font-size: 1.6rem;
+    padding-right: 20%;
+    margin-bottom: 2vw;
 }
 
 

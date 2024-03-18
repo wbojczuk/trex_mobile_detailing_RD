@@ -16,8 +16,8 @@ import Script from 'next/script';
 import "./(mainsite)/components/styling_sheets/links/mainlink.css"
 
 
-const primaryFont = Roboto({ subsets: ['latin'], weight: ["100", "300", "400", "500", "900"], display: "swap", variable: "--primary-font" })
-const secondaryFont = Nunito({ subsets: ['latin'], weight: ["200", "300", "400", "500", "600", "700", "800"], display: "swap", variable: "--secondary-font" })
+const primaryFont = Roboto({ subsets: ['latin'], weight: ["100", "300", "400", "500", "700", "900"], display: "swap", variable: "--primary-font", adjustFontFallback: false })
+const secondaryFont = Nunito({ subsets: ['latin'], weight: ["200", "300", "400", "500", "600", "700", "800"], display: "swap", variable: "--secondary-font", adjustFontFallback: false })
 
 export const metadata: Metadata = {
   title: 'Top Rated Mobile Detailing in Florence, AL | T-REX Pressure Washing and Mobile Detailing',
