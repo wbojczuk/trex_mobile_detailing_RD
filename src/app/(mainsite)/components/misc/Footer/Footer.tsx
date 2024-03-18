@@ -3,6 +3,7 @@
 import styles from "./footer.module.css"
 import Link from "next/link"
 import Image from "next/image"
+//@ts-ignore
 import { InlineIcon } from "@iconify/react"
 
 export default function Footer() {
@@ -10,7 +11,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.content}>
 
-        <Image src="/img/logo.png" width={512} height={512} className={styles.logo} alt="Main Logo"/>
+        <img src="/img/logo.webp" width={512} height={512} className={styles.logo} alt="Main Logo"/>
 
         <div className={styles.links}>
           <aside>
@@ -34,9 +35,9 @@ export default function Footer() {
               <h3 className={styles.listTitle}>Categories</h3>
               <ul className={styles.list}>
 
-                <span className={styles.listItem}>Category</span>
-                <span className={styles.listItem}>Category</span>
-                <span className={styles.listItem}>Category</span>
+                <span className={styles.listItem}>Mobile Detail</span>
+                <span className={styles.listItem}>Car Wash</span>
+                <span className={styles.listItem}>Pressure Wash</span>
               
               </ul>
             </aside>

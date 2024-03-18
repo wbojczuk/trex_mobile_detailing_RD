@@ -5,7 +5,7 @@ import styles from "./navbar.module.css"
 import Link from "next/link"
 import { useEffect, useRef, useState } from "react"
 import { usePathname } from "next/navigation"
-import Image from "next/image"
+// import Image from "next/image"
 import NavMultiOption from "./NavMultiOption"
 import NavOption from "./NavOption"
 
@@ -25,6 +25,7 @@ export default function Navbar() {
   const contactRef: any = useRef()
   const reviewsRef: any = useRef()
 
+  const logoRef: any = useRef()
   const hamburgerRef: any = useRef()
   const contentRef: any = useRef()
   const content2Ref: any = useRef()
@@ -71,20 +72,6 @@ export default function Navbar() {
     const isOnTouch = window.matchMedia("(max-width: 990px)").matches
     setIsOnTouch(isOnTouch)
     setIsOnMobile(window.matchMedia("(max-width: 649px)").matches)
-    
-    if(window.scrollY > 10){
-      navbarAnimIn()
-    }else{
-      navbarAnimOut()
-    }
-
-    window.addEventListener("scroll", ()=>{
-      if(window.scrollY > 10){
-        navbarAnimIn()
-      }else{
-        navbarAnimOut()
-      }
-    })
 
     if(isOnTouch){
       window.addEventListener("click", (evt)=>{
@@ -96,15 +83,6 @@ export default function Navbar() {
     }
   }, [])
 
-  function navbarAnimIn(){
-    const topbarStyles = window.getComputedStyle(topBarRef.current)
-        const topAmt = parseFloat(topbarStyles.height) + parseFloat(topbarStyles.paddingTop) + parseFloat(topbarStyles.paddingBottom)
-        navRef.current.style.transform = `translateY(-${topAmt}px)`
-  }
-
-  function navbarAnimOut(){
-    navRef.current.style.transform = "translateY(0)"
-  }
 
 
   function toggleMenu(){
@@ -118,13 +96,13 @@ export default function Navbar() {
   function closeMenu(){
     setMenuOpen(false)
     hamburgerRef.current.classList.remove("is-active")
-    contentRef.current.style.transform =  "scaleX(0)"
+    contentRef.current.style.transform =  "scaleY(0)"
   }
 
   function openMenu(){
     setMenuOpen(true)
     hamburgerRef.current.classList.add("is-active")
-    contentRef.current.style.transform =  "scaleX(1)"
+    contentRef.current.style.transform =  "scaleY(1)"
   }
   
   const hamburgerClass = "hamburger--collapse"
@@ -167,14 +145,14 @@ export default function Navbar() {
     <nav ref={navRef} className={styles.mainNav}>
 
       <div ref={topBarRef} className={styles.topBar}>
-        <span className={styles.topBarText}>Need some construction done? Contact us today!</span>
+      <span></span>
 
         <div className={styles.topBarLinks}>
-          <a href={`tel:${process.env.NEXT_PUBLIC_PHONE_NUMBER}`}> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="black" d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.28-.28.67-.36 1.02-.25c1.12.37 2.32.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"></path></svg>{process.env.NEXT_PHONE_NUMBER_FORMATTED}</a>
+          <a href={`tel:${process.env.NEXT_PUBLIC_PHONE_NUM}`}> <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"><path fill="currentColor" d="M152.27 37.93a8 8 0 0 1 9.8-5.66a86.22 86.22 0 0 1 61.66 61.66a8 8 0 0 1-5.66 9.8a8.23 8.23 0 0 1-2.07.27a8 8 0 0 1-7.73-5.94a70.35 70.35 0 0 0-50.33-50.33a8 8 0 0 1-5.67-9.8m-2.33 41.8c13.79 3.68 22.65 12.54 26.33 26.33A8 8 0 0 0 184 112a8.23 8.23 0 0 0 2.07-.27a8 8 0 0 0 5.66-9.8c-5.12-19.16-18.5-32.54-37.66-37.66a8 8 0 1 0-4.13 15.46m81.94 95.35A56.26 56.26 0 0 1 176 224C96.6 224 32 159.4 32 80a56.26 56.26 0 0 1 48.92-55.88a16 16 0 0 1 16.62 9.52l21.12 47.15v.12A16 16 0 0 1 117.39 96c-.18.27-.37.52-.57.77L96 121.45c7.49 15.22 23.41 31 38.83 38.51l24.34-20.71a8.12 8.12 0 0 1 .75-.56a16 16 0 0 1 15.17-1.4l.13.06l47.11 21.11a16 16 0 0 1 9.55 16.62m-15.88-2h-.11l-47-21.05l-24.35 20.71a8.44 8.44 0 0 1-.74.56a16 16 0 0 1-15.75 1.14c-18.73-9.05-37.4-27.58-46.46-46.11a16 16 0 0 1 1-15.7a6.13 6.13 0 0 1 .57-.77L104 87.15l-21-47a.61.61 0 0 1 0-.12A40.2 40.2 0 0 0 48 80a128.14 128.14 0 0 0 128 128a40.21 40.21 0 0 0 40-34.93Z"/></svg>{process.env.NEXT_PUBLIC_PHONE_NUM_FORMATTED}</a>
 
-          <a href={`mailto:${process.env.NEXT_PUBLIC_EMAIL_ADDRESS}`}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="black" d="m20 8l-8 5l-8-5V6l8 5l8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"></path></svg>{process.env.NEXT_PUBLIC_EMAIL_ADDRESS}</a>
+          <a href={`mailto:${process.env.NEXT_PUBLIC_EMAIL_ADDRESS}`}><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2zm-2 0l-8 5l-8-5zm0 12H4V8l8 5l8-5z"/></svg>{process.env.NEXT_PUBLIC_EMAIL_ADDRESS}</a>
 
-          <a href="https://google.com"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 11.5A2.5 2.5 0 0 1 9.5 9A2.5 2.5 0 0 1 12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7"></path></svg>{process.env.NEXT_PUBLIC_BUSINESS_CITY_STATE}</a>
+          <a href="https://google.com"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3a7 7 0 0 0-7 7c0 2.862 1.782 5.623 3.738 7.762A26.158 26.158 0 0 0 12 20.758a26.14 26.14 0 0 0 3.262-2.994C17.218 15.623 19 12.863 19 10a7 7 0 0 0-7-7m0 20.214l-.567-.39l-.003-.002l-.006-.005l-.02-.014l-.075-.053a25.34 25.34 0 0 1-1.214-.94a28.157 28.157 0 0 1-2.853-2.698C5.218 16.876 3 13.637 3 10a9 9 0 0 1 18 0c0 3.637-2.218 6.877-4.262 9.112a28.145 28.145 0 0 1-3.796 3.44a16.794 16.794 0 0 1-.345.251l-.021.014l-.006.005l-.002.001zM12 8a2 2 0 1 0 0 4a2 2 0 0 0 0-4m-4 2a4 4 0 1 1 8 0a4 4 0 0 1-8 0"/></svg>{process.env.NEXT_PUBLIC_BUSINESS_CITY_STATE}</a>
 
           
           
@@ -183,7 +161,7 @@ export default function Navbar() {
 
       <div className={styles.navContent}>
       <Link href="/" className={styles.logo}>
-        <Image src="/img/logo-text.webp" className={styles.logoImg} width={500} height={250} alt="Logo" />
+        <img ref={logoRef} src="/img/logo.webp" className={styles.logoImg} width={500} height={250} alt="Logo" />
         
       </Link>
 
@@ -205,35 +183,31 @@ export default function Navbar() {
           <NavOption
           title="Home"
           url="/"
-          icon={<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="black" d="M10 20v-6h4v6h5v-8h3L12 3L2 12h3v8z"></path></svg>}
           ref={homeRef}
           />
 
           <NavOption
-          title="About Us"
+          title="About"
           url="/about"
-          icon={<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="black" d="M13 9h-2V7h2m0 10h-2v-6h2m-1-9A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2"></path></svg>}
           ref={aboutRef}
           />
 
           <NavOption
           title="Reviews"
           url="/reviews"
-          icon={<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="black" d="M12 4a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4"></path></svg>}
           ref={reviewsRef}
           />
 
           <NavOption
           title="Contact"
           url="/contact"
-          icon={<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="black" d="m20 8l-8 5l-8-5V6l8 5l8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"></path></svg>}
           ref={contactRef}
           />
 
           
           <a href={"tel:"+process.env.NEXT_PUBLIC_PHONE_NUM} className={styles.cta}>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="black" d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.28-.28.67-.36 1.02-.25c1.12.37 2.32.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"></path></svg>
-            <span>CALL US {process.env.NEXT_PUBLIC_PHONE_NUM_FORMATTED}</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"><path fill="currentColor" d="M152.27 37.93a8 8 0 0 1 9.8-5.66a86.22 86.22 0 0 1 61.66 61.66a8 8 0 0 1-5.66 9.8a8.23 8.23 0 0 1-2.07.27a8 8 0 0 1-7.73-5.94a70.35 70.35 0 0 0-50.33-50.33a8 8 0 0 1-5.67-9.8m-2.33 41.8c13.79 3.68 22.65 12.54 26.33 26.33A8 8 0 0 0 184 112a8.23 8.23 0 0 0 2.07-.27a8 8 0 0 0 5.66-9.8c-5.12-19.16-18.5-32.54-37.66-37.66a8 8 0 1 0-4.13 15.46m81.94 95.35A56.26 56.26 0 0 1 176 224C96.6 224 32 159.4 32 80a56.26 56.26 0 0 1 48.92-55.88a16 16 0 0 1 16.62 9.52l21.12 47.15v.12A16 16 0 0 1 117.39 96c-.18.27-.37.52-.57.77L96 121.45c7.49 15.22 23.41 31 38.83 38.51l24.34-20.71a8.12 8.12 0 0 1 .75-.56a16 16 0 0 1 15.17-1.4l.13.06l47.11 21.11a16 16 0 0 1 9.55 16.62m-15.88-2h-.11l-47-21.05l-24.35 20.71a8.44 8.44 0 0 1-.74.56a16 16 0 0 1-15.75 1.14c-18.73-9.05-37.4-27.58-46.46-46.11a16 16 0 0 1 1-15.7a6.13 6.13 0 0 1 .57-.77L104 87.15l-21-47a.61.61 0 0 1 0-.12A40.2 40.2 0 0 0 48 80a128.14 128.14 0 0 0 128 128a40.21 40.21 0 0 0 40-34.93Z"/></svg>
+            <span>{process.env.NEXT_PUBLIC_PHONE_NUM_FORMATTED}</span>
           </a>
           
 

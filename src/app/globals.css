@@ -4,11 +4,18 @@
 }
 
 :root{
-  --primary-color: #D44B4B;
-  --primary-color-dark: #aa3d3d;
-  --secondary-color: #F6F6F6;
+  --primary-color: #BB3530;
+  --primary-color-2: #151515;
+  --primary-color-dark: #551816;
+
+  --secondary-color: #FFF;
+
   --third-color: #F6F6F6;
   --disabled-grey: #c2c2c2;
+
+  --gradient-left: linear-gradient(90deg, rgba(187,53,48,1) 0%, rgba(85,24,22,1) 100%);
+
+  --gradient-right: linear-gradient(90deg, rgba(85,24,22,1) 0%, rgba(187,53,48,1) 100%);
 
   /*
   ALREADY IMPORTED
@@ -17,8 +24,8 @@
   --secondary-font: Oswald;
   */
 
-  --primary-text-color: black;
-  --secondary-text-color: white;
+  --primary-text-color: white;
+  --secondary-text-color: #151515;
 
   --section-padding: 4vw 0;
   --section-padding-top: 4vw;

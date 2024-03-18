@@ -1,10 +1,9 @@
-import Testing from "@/app/(mainsite)/components/homepage/Testing/Testing"
-
+import Header from "@/app/(mainsite)/components/homepage/Header/Header"
 
 export default function Home() {
   return (
     <>
-      <Testing />
+      <Header />
     </>
   )
 }
