@@ -1,53 +1,40 @@
 const reviewData: reviewType[] = [
     {
-        name: "Johnny Appleseed",
+        name: "Amy, M",
         role: "Homeowner",
         title: "Best Work Ever!",
-        desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ab quas unde laudantium veniam itaque vel nam aspernatur ipsa? Cum iusto voluptates itaque assumenda illum molestiae pariatur quos sit hic.
-        
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam incidunt molestiae delectus rerum beatae, maiores dolor.`
+        desc: `Wonderful work! I highly recommend trusting your car with them!`
+    },
+    
+    {
+        name: "Haley T",
+        role: "Homeowner",
+        title: "Best Work Ever!",
+        desc: `Great guy and great work! ⭐️ ⭐️⭐️⭐️⭐️`
     },
     {
-        name: "Johnny Appleseed",
+        name: "Holly, D",
         role: "Homeowner",
         title: "Best Work Ever!",
-        desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ab quas unde laudantium veniam itaque vel nam aspernatur ipsa? Cum iusto voluptates itaque assumenda illum molestiae pariatur quos sit hic.
-        
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam incidunt molestiae delectus rerum beatae, maiores dolor.`
+        desc: `He came to my office and washed my car there! Very friendly, trustworthy and do a wonderful job! Thank you so much! I will definitely be using T-REX more often! 💯`
     },
     {
-        name: "Johnny Appleseed",
+        name: "Marion, S",
         role: "Homeowner",
         title: "Best Work Ever!",
-        desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ab quas unde laudantium veniam itaque vel nam aspernatur ipsa? Cum iusto voluptates itaque assumenda illum molestiae pariatur quos sit hic.
-        
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam incidunt molestiae delectus rerum beatae, maiores dolor.`
+        desc: `Did a great job on my car! Best it's looked in a long time.`
     },
     {
-        name: "Johnny Appleseed",
+        name: "Michelle, T",
         role: "Homeowner",
         title: "Best Work Ever!",
-        desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam incidunt molestiae delectus rerum beatae, maiores dolor.`
+        desc: `They do an excellent job inside and out for a great price.`
     },
     {
-        name: "Johnny Appleseed",
+        name: "Amy, M",
         role: "Homeowner",
         title: "Best Work Ever!",
-        desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ab quas unde laudantium veniam itaque vel nam aspernatur ipsa?
-        
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam incidunt molestiae delectus rerum beatae, maiores dolor.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam incidunt molestiae delectus rerum beatae, maiores dolor
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam incidunt molestiae delectus rerum beatae, maiores dolor`
-    },
-    {
-        name: "Johnny Appleseed",
-        role: "Homeowner",
-        title: "Best Work Ever!",
-        desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ab quas unde laudantium veniam itaque vel nam aspernatur ipsa? Cum iusto voluptates itaque assumenda illum molestiae pariatur quos sit hic.
-        
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam incidunt molestiae delectus rerum beatae, maiores dolor.`
+        desc: `Wonderful work! I highly recommend trusting your car with them!`
     },
 ]
 

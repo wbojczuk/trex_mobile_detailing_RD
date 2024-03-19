@@ -6,7 +6,7 @@ return (
  <div className={styles.detailing}>
     <div className={styles.textWrapper}>
         <h2>Auto Detailing</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Our setup is equipped with the latest tools and techniques, ensuring a thorough and professional detailing job every time. By choosing T-REX Mobile Detailing and Pressure Washing, you'll not only save time and effort but also maintain the appearance and value of your vehicles.</p>
         <Link className='main-link' href={"/contact"}>Contact Us</Link>
     </div>
     <div className={styles.imgWrapper}>
