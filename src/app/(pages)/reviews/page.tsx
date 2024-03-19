@@ -1,6 +1,5 @@
 import type { Metadata } from "next"
-import ReviewHeader from "../../../../fordev/Reviews/Reviews Style 1/ReviewHeader/ReviewHeader"
-import Reviews from "../../../../fordev/Reviews/Reviews Style 1/Reviews/Reviews"
+import Reviews from "@/app/(mainsite)/components/reviewspage/Reviews/Reviews"
 
 export const metadata: Metadata = {
     title: "Our Reviews",
@@ -10,7 +9,7 @@ export const metadata: Metadata = {
 export default function ReviewPage(){
     return(
         <>
-            <ReviewHeader />
+
             <Reviews />
         </>
     )
