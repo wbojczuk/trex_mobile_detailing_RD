@@ -71,10 +71,80 @@
 
 /* TABLET STYLES */
 @media only screen and (min-width: 650px) and (max-width: 990px){
-
+    .washAndWax{
+        padding: var(--section-padding-top) 5%;
+    }
+    .waxWrapper h3{
+        display: inline-flex;
+        align-items: center;
+        font-size: 2rem;
+    }
+    
+    .waxWrapper h2{
+        font-size: 3.5rem;
+        margin: 3vw 0;
+    }
+    .discount span{
+        font-size: 2rem;
+    }
 }
 
  /* MOBILE STYLES */
 @media only screen and (max-width: 649px){
+    .washAndWax{
+        padding: var(--section-padding-top) 5%;
+    }
+    
+    .content{
+        width: 90%;
+    }
+    
+    .waxWrapper{
+        padding: 10vw 5%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 5vw;
+    }
+    
+    .waxWrapper h3{
+        font-size: 2rem;
+    }
+    
+    .waxWrapper h2{
+        font-size: 4rem;
+        margin: 4vw 0;
+    }
+    
+    .waxWrapper h4{
+        font-family: var(--secondary-font);
+        font-style: italic;
+        font-weight: 400;
+        font-size: 1.8rem;
+    }
+    
+    .discount{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 2vw 0;
+    }
+    
+    .iconWrapper{
+        width: 10vw;
+        height: 10vw;
 
+    }
+    
+    .iconWrapper svg{
+        width: 8vw;
+        height: 8vw;
+    }
+    
+    .discount span{
+        padding-left: 2vw;
+        font-size: 2.2rem;
+        font-family: var(--secondary-font);
+        font-weight: 500;
+    }
 }

@@ -136,7 +136,7 @@
     #estimateForm{
         /* padding: 2vw; */
         padding-top: 0;
-        width: 45vw;
+        width: 42vw;
     }
     
     #estimateFormTitle{
@@ -177,13 +177,15 @@
     #estimateForm{
         /* margin-top: 8vw; */
         /* padding: 4vw; */
+        width: 65vw !important;
         padding-top: 0;
         width: 100%;
     }
     
     #estimateFormTitle{
         font-size: 2.4em;
-        padding-bottom: 8vw;
+        padding-bottom: 4vw;
+        padding-top: 4vw;
     }
     .input-wrapper{
         margin: 4vw 0
@@ -201,6 +203,13 @@
     }
     #estimateForm input[type="submit"]{
         font-size: 1.8rem;
+    }
+    #estimateForm textarea{
+        height: 10vw;
+    }
+    #estimateForm .main-link{
+        padding-top: 2vw;
+        padding-bottom: 2vw;
     }
 }
 

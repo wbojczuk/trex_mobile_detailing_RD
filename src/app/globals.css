@@ -136,7 +136,7 @@ body::-webkit-scrollbar-track {
 /* TABLET STYLES */
 @media only screen and (min-width: 650px) and (max-width: 990px){
   body{
-    padding-top: 8vw;
+    padding-top: 15vw;
   }
   :root{
     font-size: 12px;
@@ -152,7 +152,7 @@ body::-webkit-scrollbar-track {
 /* MOBILE STYLES */
 @media only screen and (max-width: 649px){
   body{
-    padding-top: 15vw;
+    padding-top: 22vw;
   }
   :root{
     font-size: 10px;

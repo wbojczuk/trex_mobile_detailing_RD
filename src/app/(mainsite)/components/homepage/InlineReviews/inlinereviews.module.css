@@ -53,9 +53,13 @@
  
 /* MOBILE STYLES */
 @media only screen and (max-width: 649px){
+    .inlineReviews h1{
+
+        font-size: 4.5rem;
+    }
     .reviewsWrapper{
         width: 100%;
-        margin: 0;
+        margin: 5vw 0;
     }
     
     .reviewSlider{
@@ -66,6 +70,6 @@
     }
 
     .reviewsWrapper p{
-        height: 35vw !important;
+        height: 32vw !important;
     }
 }

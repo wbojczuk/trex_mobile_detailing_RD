@@ -88,6 +88,10 @@
         padding: 6vw 0;
         
     }
+    .faqWrapper{
+        width: 80%;
+        padding: 4vw 5% 6vw 5%;
+    }
     
     .section h1{
         padding-bottom: 3vw;
@@ -95,9 +99,8 @@
     }
     
     .faqItem{
-        width: 60%;
-        margin: 1vw;
-        border-radius: 12px;
+        width: 70%;
+        margin: 2vw;
         
     }
     
@@ -106,7 +109,7 @@
     }
     
     .headingContent img{
-        width: 4vw;
+        width: 6vw;
     }
     
     .faqItemAnswer p{
@@ -122,6 +125,10 @@
         padding: 6vw 0;
         
     }
+    .faqWrapper{
+        width: 80%;
+        padding: 4vw 5% 6vw 5%;
+    }
     
     .section h1{
         padding-bottom: 4vw;
@@ -130,9 +137,8 @@
     }
     
     .faqItem{
-        width: 90%;
-        margin: 2vw;
-        border-radius: 8px;
+        width: 95%;
+        margin: 3vw;
         
     }
     

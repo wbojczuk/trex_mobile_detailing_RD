@@ -23,7 +23,7 @@
 /* TABLET STYLES */
 @media only screen and (min-width: 650px) and (max-width: 990px){
     .statsRibbon{
-        padding: 3vw 7.5%;
+        padding: 3vw 0;
     }
     .title{
         font-size: 1.3rem;
@@ -41,7 +41,7 @@
     }
     .statsRibbon{
         width: 100%;
-        padding: 4vw 0;
-        margin: var(--section-padding);
+        padding: 8vw 0;
+        /* margin: var(--section-padding-top); */
     }
 }

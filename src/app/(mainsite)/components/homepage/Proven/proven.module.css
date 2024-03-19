@@ -48,10 +48,12 @@
     .proven{
         padding: 4.5vw 0;
         gap: 6vw;
+        width: 100%;
+        left: 0%;
     }
     
     .provenItem{
-        width: 15%;
+        width: 20%;
         padding: 2%;
     }
     

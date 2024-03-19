@@ -11,7 +11,7 @@ return (
     </div>
     <div className={styles.imgWrapper}>
         <img src="/img/black-car.png" alt="image of a black car" className="bg-img" />
-        <div className="shader" style={{backgroundColor: "rgba(187, 53, 48, 0.7)"}}></div>
+        <div className={`shader ${styles.shader}`}></div>
     </div>
  </div>
 )};
