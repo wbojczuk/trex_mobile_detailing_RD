@@ -10,7 +10,7 @@ export default function ReviewPage(){
     return(
         <>
 
-            <Reviews />
+            {/* <Reviews /> */}
         </>
     )
 }
