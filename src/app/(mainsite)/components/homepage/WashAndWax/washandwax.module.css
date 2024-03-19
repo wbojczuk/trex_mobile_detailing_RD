@@ -1,0 +1,80 @@
+.washAndWax{
+    position: relative;
+    padding: var(--section-padding-top) 10%;
+}
+
+.content{
+    width: 50%;
+}
+
+.waxWrapper{
+    padding: 6vw 5%;
+    background: var(--gradient-left);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.waxWrapper h3{
+    display: inline-flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.waxWrapper h2{
+    font-size: 4rem;
+    margin: 2vw 0;
+}
+
+.waxWrapper h4{
+    font-family: var(--secondary-font);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.discount{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 2vw 0;
+}
+
+.iconWrapper{
+    width: 5vw;
+    height: 5vw;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+
+.iconWrapper svg{
+    width: 4.5vw;
+    height: 4.5vw;
+}
+
+.discount span{
+    padding-left: 1vw;
+    font-size: 2.5rem;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+}
+
+
+/* SMALL LAPTOP STYLES */
+@media only screen and (min-width: 991px) and (max-width: 1400px){
+
+}
+
+/* TABLET STYLES */
+@media only screen and (min-width: 650px) and (max-width: 990px){
+
+}
+
+ /* MOBILE STYLES */
+@media only screen and (max-width: 649px){
+
+}

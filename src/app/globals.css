@@ -17,6 +17,8 @@
 
   --gradient-right: linear-gradient(90deg, rgba(85,24,22,1) 0%, rgba(187,53,48,1) 100%);
 
+  --gradient-dark: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(187,53,48,1) 100%);
+
   /*
   ALREADY IMPORTED
   
