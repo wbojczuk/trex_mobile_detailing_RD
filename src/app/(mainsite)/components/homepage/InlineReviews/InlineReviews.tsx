@@ -10,7 +10,7 @@ import Proven from "../Proven/Proven";
 export default function InlineReviews() {
 
     const reviewElems = reviewData.map((data, i)=>{
-        return <SwiperSlide className={`swiper-no-swiping ${styles.reviewSlider}`} key={i}><Review className={styles.review} {...data}  /></SwiperSlide>
+        return <SwiperSlide className={`${styles.reviewSlider}`} key={i}><Review className={styles.review} {...data}  /></SwiperSlide>
     })
    
   return (

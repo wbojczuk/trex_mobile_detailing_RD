@@ -31,10 +31,10 @@ const reviewData: reviewType[] = [
         desc: `They do an excellent job inside and out for a great price.`
     },
     {
-        name: "Amy, M",
+        name: "Holly, D",
         role: "Homeowner",
         title: "Best Work Ever!",
-        desc: `Wonderful work! I highly recommend trusting your car with them!`
+        desc: `He came to my office and washed my car there! Very friendly, trustworthy and do a wonderful job! Thank you so much! I will definitely be using T-REX more often! 💯`
     },
 ]
 
