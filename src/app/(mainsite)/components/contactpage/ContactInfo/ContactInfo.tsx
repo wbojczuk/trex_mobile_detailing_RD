@@ -37,8 +37,11 @@ return (
             </div>
             <div className={styles.textInfo}>
                 <h2>Socials</h2>
-                <a className={styles.socialIcon} target='_blank' href={`https://www.facebook.com/amenamen.amen.58?mibextid=kFxxJD`}>
+                <a className={styles.socialIcon} target='_blank' href={`https://www.facebook.com/TrexCarWashFlorence/`}>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z"></path></svg>
+                </a>
+                <a className={styles.socialIcon} target='_blank' href={`https://maps.app.goo.gl/pQSkCM6oQmL6SwcMA`}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16"><path fill="currentColor" d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301c1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"/></svg>
                 </a>
             </div>
         </div>

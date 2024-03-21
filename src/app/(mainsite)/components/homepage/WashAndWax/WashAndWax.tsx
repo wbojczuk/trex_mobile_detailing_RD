@@ -34,7 +34,7 @@ return (
         </div>
     </div>
 
-    <img src="/img/header-bg.png" aria-hidden className="bg-img" />
+    <img src="/img/header-bg.webp" aria-hidden className="bg-img" />
     <div className="shader" style={{backgroundColor: "rgba(255,255,255,.5)"}}></div>
  </div>
 )};

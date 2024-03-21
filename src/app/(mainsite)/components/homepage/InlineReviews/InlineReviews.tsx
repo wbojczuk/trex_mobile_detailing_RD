@@ -49,7 +49,7 @@ export default function InlineReviews() {
             <a target="_blank" className="main-link" href="https://www.facebook.com/TrexCarWashFlorence/reviews">Leave Review</a>
             <Link className="main-link" href={"/contact"}>Contact</Link>
         </div>
-        <img src="/img/car-tire.png" aria-hidden className="bg-img" />
+        <img src="/img/car-tire.webp" aria-hidden className="bg-img" />
         <div className="shader" style={{backgroundColor: "rgba(255,255,255,0.8)"}}></div>
     </section>
   )

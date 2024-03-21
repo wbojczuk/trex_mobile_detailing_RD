@@ -18,7 +18,7 @@ export default function ContactPage(){
                 <FormAndMap />
 
                 <div style={{backgroundColor: "rgba(0,0,0,0.8)"}} className="shader"></div>
-                <img src="/img/header-bg.png" alt="image of a black car" className="bg-img" />
+                <img src="/img/header-bg.webp" alt="image of a black car" className="bg-img" />
             </div>
         </>
     )

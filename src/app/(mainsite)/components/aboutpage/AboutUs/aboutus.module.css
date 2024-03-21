@@ -59,6 +59,9 @@
        padding-left: 5%;
         width: 50%;
     }
+    .textWrapper h2{
+        padding-right: 20%;
+    }
     
     .textWrapper p{
         margin: 3vw 0;

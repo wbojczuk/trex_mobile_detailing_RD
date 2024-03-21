@@ -21,7 +21,7 @@ export default function Reviews() {
         </div>
 
         <div style={{backgroundColor: "rgba(0,0,0,0.64)"}} className="shader"></div>
-        <img src="/img/car-tire.png" alt="image of a clean car tire" className="bg-img" />
+        <img src="/img/car-tire.webp" alt="image of a clean car tire" className="bg-img" />
     </section>
   )
 }
