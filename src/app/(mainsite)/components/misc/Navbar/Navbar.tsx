@@ -24,6 +24,7 @@ export default function Navbar() {
   const aboutRef: any = useRef()
   const contactRef: any = useRef()
   const reviewsRef: any = useRef()
+  const galleryRef: any = useRef()
 
   const logoRef: any = useRef()
   const hamburgerRef: any = useRef()
@@ -51,6 +52,11 @@ export default function Navbar() {
     {
       triggers: ["/", "/home"],
       ref: homeRef
+    }
+    ,
+    {
+      triggers: ["/gallery"],
+      ref: galleryRef
     }
     
   ]
@@ -190,6 +196,11 @@ export default function Navbar() {
           title="About"
           url="/about"
           ref={aboutRef}
+          />
+          <NavOption
+          title="Gallery"
+          url="/gallery"
+          ref={galleryRef}
           />
 
           <NavOption

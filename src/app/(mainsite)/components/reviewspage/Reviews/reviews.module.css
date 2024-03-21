@@ -1,6 +1,15 @@
 .section{
     padding-top: calc(var(--section-padding-top) / 2);
     padding-bottom: var(--section-padding-bottom);
+    position: relative;
+}
+
+.section h2{
+    margin: 4vw 0;
+    text-align: center;
+    font-weight: 500;
+    font-size: 2.5rem;
+    padding: 0 35%;
 }
 
 .reviewsWrapper{
@@ -8,14 +17,16 @@
     margin: 0 15%;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
     justify-content: center;
     padding-bottom: calc(var(--section-padding-bottom) / 2);
 }
 
 .review{
-    padding: 4% 6%;
-    margin: 1%;
-    background-color: white;
+    width: 26%;
+    padding: 2% 1.5%;
+    margin: 2%;
+    background-color: rgba(255,255,255,0.9);
     box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
 }
 
@@ -35,7 +46,7 @@
     height: 10vw;
     overflow-y: auto;
     margin: 0.5vw 0;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 150%;
     color: var(--secondary-text-color);
 }
@@ -85,13 +96,18 @@
     
     .review{
         width: 40%;
-        padding: 4% 2%;
+        padding: 2% 2%;
         margin: 1%;
+    }
+
+    .section h2{
+        margin: 5vw 0;
+        padding: 0 25%;
     }
     
     .review svg{
-        width: 5vw;
-        height: 5vw;
+        width: 8vw;
+        height: 8vw;
         margin: 1vw 0;
         color: var(--primary-color);
     }
@@ -99,6 +115,7 @@
     .review p{
         margin: 1vw 0;
         height: 22vw;
+        font-size: 1.4rem;
     }
     
     .review span{
@@ -115,13 +132,18 @@
     
     .review{
         width: 96%;
-        padding: 8% 10%;
+        padding: 4% 10%;
         margin: 4% 0;
+    }
+
+    .section h2{
+        margin: 8vw 0;
+        padding: 0 5%;
     }
     
     .review svg{
-        width: 12vw;
-        height: 12vw;
+        width: 15vw;
+        height: 15vw;
         margin: 1.5vw 0;
         color: var(--primary-color);
     }
@@ -129,6 +151,7 @@
     .review p{
         margin: 1.5vw 0;
         height: 42vw;
+        font-size: 1.4rem;
     }
     
     .review span{
